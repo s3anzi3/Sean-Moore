@@ -17,12 +17,13 @@ export const projects = [
     title: "Outside-the-Box",
     subtitle: "Thinking Certification",
     blurb:
-      "A 50-level browser puzzle game where every level is a trap that punishes the conventional answer and rewards lateral thinking — from Stroop tests to a fake system-breach minigame and a name-recall finale that issues a certificate.",
-    tags: ["TypeScript", "Canvas", "Game", "Firebase"],
+      "A 50-level browser puzzle game where every level is a trap that punishes the conventional answer and rewards lateral thinking — from Stroop tests to a fake system-breach minigame and a name-recall finale that issues a certificate. A finalist in the Stony Brook University Game Programming Competition.",
+    tags: ["TypeScript", "Canvas", "Game", "SBU finalist"],
     accent: "#f59e0b",
     links: [
       { label: "Play live", url: "https://outside-the-box-game.web.app" },
       { label: "GitHub", url: "https://github.com/s3anzi3/outside-the-box-game" },
+      { label: "Competition", url: "https://www3.cs.stonybrook.edu/~games/" },
     ],
   },
   {
