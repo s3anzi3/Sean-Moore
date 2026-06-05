@@ -1,0 +1,19 @@
+{
+  "name": "panky-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "3D portfolio website built with Three.js + Vite",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "vite build && firebase deploy --only hosting"
+  },
+  "dependencies": {
+    "three": "^0.169.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}

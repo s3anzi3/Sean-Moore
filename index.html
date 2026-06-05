@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Sean Moore — Portfolio</title>
+    <meta name="description" content="3D portfolio of Sean Moore — developer and founder of Edgeable." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 3D scene mounts here -->
+    <canvas id="scene"></canvas>
+
+    <!-- Loading veil -->
+    <div id="loader"><div class="loader-ring"></div></div>
+
+    <!-- UI overlay -->
+    <header class="topbar">
+      <button class="brand" data-open="about">
+        <span class="brand-dot"></span>
+        <span class="brand-name" id="brand-name">Sean Moore</span>
+      </button>
+      <nav class="nav">
+        <button data-open="about">About</button>
+        <button data-open="contact">Contact</button>
+      </nav>
+    </header>
+
+    <div class="hero" id="hero">
+      <h1 id="hero-title">Building things <span>on the web.</span></h1>
+      <p id="hero-tag">Drag to look around · click a card to explore</p>
+    </div>
+
+    <!-- Slide-in detail panel -->
+    <aside class="panel" id="panel" aria-hidden="true">
+      <button class="panel-close" data-close>✕</button>
+      <div class="panel-accent" id="panel-accent"></div>
+      <h2 id="panel-title"></h2>
+      <p class="panel-sub" id="panel-sub"></p>
+      <div class="panel-tags" id="panel-tags"></div>
+      <p class="panel-blurb" id="panel-blurb"></p>
+      <div class="panel-links" id="panel-links"></div>
+    </aside>
+
+    <!-- Generic modal (about / contact) -->
+    <div class="modal-backdrop" id="modal" aria-hidden="true">
+      <div class="modal">
+        <button class="panel-close" data-close>✕</button>
+        <h2 id="modal-title"></h2>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
