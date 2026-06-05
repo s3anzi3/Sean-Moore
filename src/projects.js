@@ -17,8 +17,8 @@ export const projects = [
     title: "Outside-the-Box",
     subtitle: "Thinking Certification",
     blurb:
-      "A 50-level assessment in which candidates earn a certificate — stamping their problem solving, lateral thinking, and decision making — upon completion. A finalist in the 21st annual Stony Brook University Game Programming Competition.",
-    tags: ["TypeScript", "Canvas", "Game", "SBU finalist"],
+      "A 50-level assessment in which candidates earn a certificate that stamps their problem solving, lateral thinking, and decision making upon completion. A finalist in the 21st annual Stony Brook University Game Programming Competition.",
+    tags: ["TypeScript", "Canvas", "Assessment", "SBU finalist"],
     accent: "#f59e0b",
     links: [
       { label: "Play live", url: "https://outside-the-box-game.web.app" },
@@ -39,7 +39,7 @@ export const projects = [
     title: "More soon",
     subtitle: "Work in progress",
     blurb:
-      "I'm always building. This slot is a placeholder for the next project — check back, or reach out if you want to know what I'm working on right now.",
+      "I'm always building. This slot is a placeholder for the next project. Check back, or reach out if you want to know what I'm working on right now.",
     tags: ["Coming soon"],
     accent: "#34d399",
     links: [],
@@ -51,7 +51,7 @@ export const profile = {
   name: "Sean Moore",
   tagline: "Developer & founder of Edgeable",
   about:
-    "I'm a small-business owner and self-taught developer. I run Edgeable and build web apps — games, data-driven tools, and Firebase-powered products — usually shipping the whole thing end to end, from data pipeline to deployed site.",
+    "I'm a small-business owner and self-taught developer. I run Edgeable and build web apps: games, data-driven tools, and Firebase-powered products, usually shipping the whole thing end to end, from data pipeline to deployed site.",
   email: "seanchristmoore@gmail.com",
   links: [
     { label: "GitHub", url: "https://github.com/s3anzi3" },
