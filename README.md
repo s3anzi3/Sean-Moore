@@ -1,7 +1,9 @@
 # Sean Moore — 3D Portfolio
 
-A single-page portfolio built with **Three.js + Vite**. Projects float as interactive 3D
-cards over a parallax starfield — drag to orbit, click a card to open its details.
+A single-page portfolio built with **Three.js + Vite**. The centerpiece is a custom
+GLSL shader blob — a noise-displaced sphere with recomputed normals and a fresnel rim
+light — that reacts to the mouse and shifts position/color/energy as you scroll through
+the Hero, About, Work, and Contact sections.
 
 ## Run it
 
@@ -21,12 +23,13 @@ npm run preview  # preview the production build locally
 
 Everything you'd normally change lives in **`src/projects.js`**:
 
-- `projects[]` — each entry becomes a floating card. Fields: `title`, `subtitle`, `blurb`,
-  `tags`, `accent` (glow color), `links` (buttons in the detail panel), `placeholder` (bool).
+- `projects[]` — each entry becomes a row in the Work section. Fields: `title`, `subtitle`,
+  `blurb`, `tags`, `accent` (the color the blob turns when you hover the row), `links`,
+  `placeholder` (bool).
 - `profile` — your name, the About text, email, and the contact links.
 
-Add a project by appending another object to the `projects` array — the 3D layout, glow,
-and detail panel all adapt automatically.
+Add a project by appending another object to the `projects` array — the accordion row and
+the blob's hover color adapt automatically.
 
 ## Deploy to Firebase Hosting
 

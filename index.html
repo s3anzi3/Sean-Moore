@@ -4,57 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Sean Moore — Portfolio</title>
-    <meta name="description" content="3D portfolio of Sean Moore — developer and founder of Edgeable." />
+    <meta name="description" content="Portfolio of Sean Moore — developer and founder of Edgeable." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <!-- 3D scene mounts here -->
     <canvas id="scene"></canvas>
-
-    <!-- Loading veil -->
     <div id="loader"><div class="loader-ring"></div></div>
 
-    <!-- UI overlay -->
     <header class="topbar">
-      <button class="brand" data-open="about">
+      <button class="brand" data-scroll="top">
         <span class="brand-dot"></span>
-        <span class="brand-name" id="brand-name">Sean Moore</span>
+        <span id="brand-name">Sean Moore</span>
       </button>
       <nav class="nav">
-        <button data-open="about">About</button>
-        <button data-open="contact">Contact</button>
+        <button data-scroll="about">About</button>
+        <button data-scroll="work">Work</button>
+        <button data-scroll="contact">Contact</button>
       </nav>
     </header>
 
-    <div class="hero" id="hero">
-      <h1 id="hero-title">Building things <span>on the web.</span></h1>
-      <p id="hero-tag">Drag to look around · click a card to explore</p>
-    </div>
+    <main>
+      <section id="hero" class="section" data-section="hero">
+        <div class="wrap center">
+          <p class="eyebrow">Portfolio</p>
+          <h1 class="display" id="hero-name">Sean Moore</h1>
+          <p class="lead" id="hero-tag">Developer &amp; founder of Edgeable</p>
+        </div>
+        <div class="scroll-cue">scroll<span>↓</span></div>
+      </section>
 
-    <!-- Slide-in detail panel -->
-    <aside class="panel" id="panel" aria-hidden="true">
-      <button class="panel-close" data-close>✕</button>
-      <div class="panel-accent" id="panel-accent"></div>
-      <h2 id="panel-title"></h2>
-      <p class="panel-sub" id="panel-sub"></p>
-      <div class="panel-tags" id="panel-tags"></div>
-      <p class="panel-blurb" id="panel-blurb"></p>
-      <div class="panel-links" id="panel-links"></div>
-    </aside>
+      <section id="about" class="section" data-section="about">
+        <div class="wrap right">
+          <p class="eyebrow">About</p>
+          <p class="big-text" id="about-text"></p>
+        </div>
+      </section>
 
-    <!-- Generic modal (about / contact) -->
-    <div class="modal-backdrop" id="modal" aria-hidden="true">
-      <div class="modal">
-        <button class="panel-close" data-close>✕</button>
-        <h2 id="modal-title"></h2>
-        <div id="modal-body"></div>
-      </div>
-    </div>
+      <section id="work" class="section" data-section="work">
+        <div class="wrap left">
+          <p class="eyebrow">Selected work</p>
+          <ul class="projects" id="projects"></ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section" data-section="contact">
+        <div class="wrap center">
+          <p class="eyebrow">Get in touch</p>
+          <h2 class="display sm">Let's build<br />something.</h2>
+          <div class="contact-links" id="contact-links"></div>
+        </div>
+      </section>
+    </main>
 
     <script type="module" src="/src/main.js"></script>
   </body>
